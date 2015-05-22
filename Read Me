@@ -1,0 +1,46 @@
+Solidus Code Script (.scs)
+
+1) All input files to be loaded must have a file extension of scs.  Therefore, a file with the name "test.scs" is valid or anything
+	with "*.scs"
+
+2) Functions are the heart of the script.  They are to be called from your c++ application and/or from withing your script
+	program.  
+	
+	(1) Layout of a function is as follows:
+	
+	function functionName(...args...){
+	}
+	
+	(2) you can add arguments to your function by defintion by simply adding the name of the argument 
+	without the var keyword
+	
+	example:
+	
+	function functionName( arg0, arg1,arg2){
+	
+	}
+	
+3) To declare variables, use use the var keyword
+	example:
+	
+	function functionName( arg0, arg1, arg2){
+		var x = 0
+		x = (arg*2)^2
+		
+		print(x)
+	}
+4) System calls:
+	print(value)	-prints value to console
+	length()		-prints number of characters contained in a variable that contains a string using the
+					dot operator
+	example:
+	function doFunc(){
+		var s = "this is a string"
+		
+		print( s.length())	
+		
+	}
+	
+	the above script code prints the length of variable "s" to the console
+	
+	

@@ -1,0 +1,9 @@
+function equation(a,b){
+	var i = 0
+	var msg = "This is going to be a simple message"
+	while(i < 10){
+		
+		print(msg + i)
+		i = i+1
+	}
+}
